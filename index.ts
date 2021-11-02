@@ -116,8 +116,8 @@ const btr = {
 
 //tsc --target esnext index.ts
 /**
- git add .
- git commit -m 'a'
- git push
+    git add .
+    git commit -m 'a'
+    git push
  */
 export { btr as BTR }

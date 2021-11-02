@@ -104,7 +104,7 @@ const btr = {
     isGuest: (username) => /Guest[0-9]{13}/.test(`${username}`),
     toSingleLine: (sentence) => `${sentence}`.replace(/ {0,}\n {0,}/g, ' '),
     /**Wrapper for functions */
-    try: async (fn, ...args) => {
+    tryCatch: async (fn, ...args) => {
         /**Ping me on discord with the stack of the error */
         const divineError = (x) => {
             const error = x.replace(/.{0,}\(rejection id: 1\)\{0,}non-zero exit code./, '');
@@ -137,4 +137,9 @@ const btr = {
     '?': { divine: null, title: null, }
 };
 //tsc --target esnext index.ts
+/**
+    git add .
+    git commit -m 'a'
+    git push
+ */
 export { btr as BTR };

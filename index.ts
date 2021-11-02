@@ -91,7 +91,7 @@ const btr = {
     toSingleLine: (sentence: string) => `${sentence}`.replace(/ {0,}\n {0,}/g, ' '),
 
     /**Wrapper for functions */
-    try: async (fn: (...args: unknown[]) => Promise<unknown>, ...args: unknown[]) => {
+    tryCatch: async (fn: (...args: unknown[]) => Promise<unknown>, ...args: unknown[]) => {
 
         /**Ping me on discord with the stack of the error */
         const divineError = (x: Error['stack']) => {
@@ -119,5 +119,6 @@ const btr = {
     git add .
     git commit -m 'a'
     git push
+    
  */
 export { btr as BTR }

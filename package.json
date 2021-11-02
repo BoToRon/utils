@@ -1,0 +1,11 @@
+{
+    "name": "@botoron/my-global-utils",
+    "version": "1.0.0",
+    "description": "(insert description here)",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "BoToRon",
+    "license": "ISC"
+}
